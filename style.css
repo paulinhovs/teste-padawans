@@ -1,0 +1,61 @@
+* {
+    margin:0;
+    
+}
+
+.space-geral {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(21, 1, 48);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.lista-button {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+li {
+    margin-top: 20px;
+}
+
+#text1 {
+    color: whitesmoke;
+    font-family: 'Permanent Marker', cursive;
+}
+
+@media (min-width:370px) and (max-width:415px) {
+    
+    #text1 {
+        margin-left: 80px;
+        margin-top: -50px;
+    }
+
+}
+
+@media (min-width:360px) and (max-width:369px) {
+    
+    #text1 {
+        margin-left: 60px;
+        margin-top: -50px;
+    }
+
+}
+
+@media (min-width:320px) and (max-width:359px) {
+    
+    #text1 {
+        margin-left: 40px;
+        margin-top: -50px;
+    }
+
+}
+
+

@@ -1,13 +1,13 @@
 fetch('https://jsonplaceholder.typicode.com/posts/1')
   .then(response => response.json())
   .then(json => {
-    const div = document.getElementById("conteudo");
+    const div = document.getElementById("posts");
     div.innerText = JSON.stringify(json.title);
 
 })
 
 function request() {
-    fetch("https://jsonplaceholder.typicode.com/todos")
+    fetch("https://jsonplaceholder.typicode.com/posts")
     .then(function(response){
         return response.json()
     })

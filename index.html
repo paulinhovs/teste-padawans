@@ -6,26 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste - Padawans</title>
     <link rel="stylesheet" href="style.css">
+    
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<div class="space-geral">
-
+<div id="exemplo1">
     <h1 id="text1">Teste Estágio - Framework</h1>
-
     <ul class="lista-button">
-        <li id="posts" ><button>POSTS</button></li>
-        <li id="albuns"><button>ALBUNS</button></li>
-        <li id="todos"><button>TODOS</button></li>
+        <li id="posts" onclick="toggleDiv()" ><button>POSTS</button></li>
+        <li id="albuns" onclick="toggleDiv2()"><button>ALBUNS</button></li>
+        <li id="todos" onclick="toggleDiv3()"><button>TODOS</button></li>
     </ul>
 </div>
 
+<div id="exemplo2">
+    <ul class="lista-button">
+    <h1 id="text1">Teste Estágio - Framework</h1>
+    <li id="posts2"><button>Get Post</button></li>
+    <li id="voltar1" onclick="toggleDiv4()"><button>Voltar</button></li>
+    <div id="cardDiv"></div>
+    </ul>
+</div>
 
+<div id="exemplo3">
+    <ul class="lista-button">
+    <h1 id="text1">Teste Estágio - Framework</h1>
+    <li id="albuns2"><button>Get Albuns</button></li>
+    <li id="voltar1" onclick="toggleDiv5()"><button>Voltar</button></li>
+    </ul>
+</div>
 
-
-
+<div id="exemplo4">
+    <ul class="lista-button">
+    <h1 id="text1">Teste Estágio - Framework</h1>
+    <li id="todos3"><button>Get Todos</button></li>
+    <li id="voltar1" onclick="toggleDiv6()"><button>Voltar</button></li>
+    </ul>
+</div>
 
 
 

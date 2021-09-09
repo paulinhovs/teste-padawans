@@ -73,7 +73,6 @@ fetch("https://jsonplaceholder.typicode.com/posts")
   
     });
     
-    
    })
 }
 
@@ -92,7 +91,6 @@ function request1(){
     
       });
       
-      
      })
   }
 
@@ -108,9 +106,9 @@ function request1(){
         response.forEach(element => {
     
           result.innerHTML = 'User Id:' + element.userId + "Id:" + element.id + "title:" + element.title + "completed:" + element.completed + "<br><br>"
+          
       
         });
-        
-        
+         
        })
     }

@@ -58,6 +58,14 @@ function toggleDiv6() {
   } 
 }
 
-fetch('https://jsonplaceholder.typicode.com/todos/1')
-  .then(response => response.json())
-  .then(json => console.log(json))
+function request(){
+fetch("https://jsonplaceholder.typicode.com/todos")
+  .then(function(response){
+    return response.json()
+  })
+  .then((response) =>{
+    console.log (response)
+    var result = document.getElementById('result')
+    result.innerHTML = 'User Id:' + response.userId + "Id:" + response.id + "title:" + response.title + "completed:" + response.completed
+   })
+}

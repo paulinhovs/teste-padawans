@@ -71,9 +71,11 @@ li {
     display: none;
 }
 
-#result {
+#result, 
+#result1,
+#result2 {
     margin-top: 20px;
-    margin-left: -25px;
+    margin-left: -10px;
 }
 
 

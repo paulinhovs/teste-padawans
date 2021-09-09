@@ -59,13 +59,58 @@ function toggleDiv6() {
 }
 
 function request(){
-fetch("https://jsonplaceholder.typicode.com/todos")
+fetch("https://jsonplaceholder.typicode.com/posts")
   .then(function(response){
     return response.json()
   })
   .then((response) =>{
-    console.log (response)
     var result = document.getElementById('result')
-    result.innerHTML = 'User Id:' + response.userId + "Id:" + response.id + "title:" + response.title + "completed:" + response.completed
+    var item = ''
+    console.log (response)
+    response.forEach(element => {
+
+      result.innerHTML = 'User Id:' + element.userId + "Id:" + element.id + "title:" + element.title + "completed:" + element.completed + "<br><br>"
+  
+    });
+    
+    
    })
 }
+
+function request1(){
+  fetch("https://jsonplaceholder.typicode.com/albums")
+    .then(function(response){
+      return response.json()
+    })
+    .then((response) =>{
+      var result = document.getElementById('result1')
+      var item = ''
+      console.log (response)
+      response.forEach(element => {
+  
+        result.innerHTML = 'User Id:' + element.userId + "Id:" + element.id + "title:" + element.title + "completed:" + element.completed + "<br><br>"
+    
+      });
+      
+      
+     })
+  }
+
+  function request2(){
+    fetch("https://jsonplaceholder.typicode.com/todos")
+      .then(function(response){
+        return response.json()
+      })
+      .then((response) =>{
+        var result = document.getElementById('result2')
+        var item = ''
+        console.log (response)
+        response.forEach(element => {
+    
+          result.innerHTML = 'User Id:' + element.userId + "Id:" + element.id + "title:" + element.title + "completed:" + element.completed + "<br><br>"
+      
+        });
+        
+        
+       })
+    }
